@@ -13,6 +13,8 @@ anon_logo = '''
 ##     ## ##   ### ##     ## ##   ###    ##     ## ##    ##  ##     ## ##        ##     ## ##       
 ##     ## ##    ##  #######  ##    ##    ########  ##     ##  #######  ##        ##     ## ######## 
 
+
+
 ##       #### ######## ######## ##    ## #### ######## 
 ##        ##     ##    ##       ##   ##   ##     ##    
 ##        ##     ##    ##       ##  ##    ##     ##    
@@ -43,10 +45,9 @@ def tentang():
 \t\t+=================================================+
        
        
+ '''
  
-'''
- 
-            #Definisi dari Drupal Bing Expoliter
+            #Defenisi dari Drupal Bing Expoliter
 def drupal():
  
     '''Drupal Exploit Binger Seluruh Website dari Server'''
