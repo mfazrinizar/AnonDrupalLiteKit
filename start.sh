@@ -35,7 +35,7 @@ read -p "Anon Admin Finder]-->" anon
 if [ $anon = A ] || [ $anon = a ]
 then
 clear
-figlet "Anon Admin Finder" | lolcat
+figlet "Anon Drupal LiteKit" | lolcat
 echo "\033[32;1m"
 python2 anon.py
 fi
